@@ -128,3 +128,35 @@ body{
     margin-bottom: 2rem;
 }
 
+/*Hypotenus*/
+.input-1{
+    display: block;
+    margin: 1rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+#side-input{
+    margin: 1rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+.button{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--primary-color);
+    font-weight: bold;
+    font-size: 1.7rem;
+    background-color:var(--primary-color);
+}
+
+.message3{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
