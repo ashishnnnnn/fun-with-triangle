@@ -1,18 +1,21 @@
-var side1 = document.querySelector(".first-side")
+var side1 = document.querySelector(".first-side");
 var side2 = document.querySelector(".second-side");
-var button = document.querySelector(".button")
+var button = document.querySelector(".button");
 var message = document.querySelector(".message3");
 
-function get_hypotenus(side1,side2){
-    var first = Number(side1);
-    var second = Number(side2);
-    var hypotenus = Math.sqrt((first*first) + (second*second));
-    return hypotenus;
+function get_message(side1, side2) {
+  var first = Number(side1);
+  var second = Number(side2);
+  if (first <= 0 || second <= 0) {
+    return "Please Enter Positive Values as side";
+  }
+  var hypotenus = Math.sqrt(first * first + second * second);
+  return "Hypotenus is " + hypotenus;
 }
 
-function showmessage(){
-    var hypotenus = get_hypotenus(side1.value,side2.value);
-    message.innerText = "Hypotenus is "+hypotenus;
+function showmessage() {
+  var recieved_mess = get_message(side1.value, side2.value);
+  message.innerText = recieved_mess;
 }
 
-button.addEventListener("click",showmessage);
+button.addEventListener("click", showmessage);
