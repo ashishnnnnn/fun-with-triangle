@@ -8,7 +8,9 @@ function get_message(side1, side2, side3) {
   var first = Number(side1);
   var second = Number(side2);
   var third = Number(side3);
-  // console.log(first,second,third);
+  if (side1 == "" || side2 == "" || side3 == "") {
+    return "Please fill the above input value";
+  }
   if (side1 <= 0 || side2 <= 0 || side3 <= 0) {
     return "Please Enter positive value as side of Traingle";
   }
